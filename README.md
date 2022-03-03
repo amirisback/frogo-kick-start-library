@@ -5,6 +5,9 @@
 - Privacy Policy [Click Here](https://github.com/frogobox/frogo-kick-start-library/blob/master/PRIVACY-POLICY.md)
 - License [Click Here](https://github.com/frogobox/frogo-kick-start-library/blob/master/LICENSE)
 
+Repository for testing build from jitpack.io
+- Red : Failed
+- Green : Success / Pass
 
 ## Version Release
 This Is Latest Release
