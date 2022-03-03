@@ -19,4 +19,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "FrogoKickStartLibrary"
-include(":app")
+include(":app", ":frogolibraryname")
