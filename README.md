@@ -46,19 +46,19 @@ allprojects {
       
 ### Step 2. Add the dependency (build.gradle : Module)
 
-    #### <Option 1> Groovy Gradle
+#### <Option 1> Groovy Gradle
 
-        dependencies {
-            // library [project-name]
-            implementation 'com.github.frogobox:[project-name]:comming-soon'
-        }
+    dependencies {
+        // library [project-name]
+        implementation 'com.github.frogobox:[project-name]:comming-soon'
+    }
 
-    #### <Option 2> Kotlin DSL Gradle
+#### <Option 2> Kotlin DSL Gradle
 
-        dependencies {
-            // library [project-name]
-            implementation("com.github.frogobox:[project-name]:comming-soon")
-        }
+    dependencies {
+        // library [project-name]
+        implementation("com.github.frogobox:[project-name]:comming-soon")
+    }
 
 
 ## Colaborator
