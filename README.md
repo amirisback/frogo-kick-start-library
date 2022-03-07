@@ -2,6 +2,7 @@
 
 ## frogo-kick-start-library
 - Template Frogo for creating library
+- Using GitHub Action For CI / CD
 - Privacy Policy [Click Here](https://github.com/frogobox/frogo-kick-start-library/blob/master/PRIVACY-POLICY.md)
 - License [Click Here](https://github.com/frogobox/frogo-kick-start-library/blob/master/LICENSE)
 
