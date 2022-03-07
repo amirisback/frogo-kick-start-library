@@ -41,7 +41,7 @@ object ProjectSetting {
 
     // ---------------------------------------------------------------------------------------------
 
-    const val GITHUB_KEY_ID = "50381689"
+    const val GITHUB_KEY_ID = "frogobox"
     const val GITHUB_KEY_TOKEN = "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"
 
     const val BASE_PACAKGE_NAME = "$APP_DOMAIN.$APP_PLAY_CONSOLE"
