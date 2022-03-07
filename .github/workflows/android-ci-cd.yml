@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -33,7 +32,6 @@ jobs:
       - name: Build project
         run: ./gradlew build
         env:
-          GPR_USER: ${{ secrets.GITHUB_ACTOR }}
           GPR_API_KEY: ${{ secrets.GPR_API_KEY }}
 
       # Create APK Debug
@@ -57,5 +55,7 @@ jobs:
           name: App bundle(s) and APK(s) generated
           path: app/build/outputs/
 
-      - name: Publish To Github Package
+      # Publish to GitHub Package
+      # Noted check you package tab
+      - name: Publish To GitHub Package
         run: ./gradlew publish

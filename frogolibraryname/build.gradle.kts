@@ -1,8 +1,16 @@
+import java.io.File
+import java.io.FileInputStream
+import java.util.*
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     `maven-publish`
+}
+
+val githubProperties = Properties().apply {
+    load(FileInputStream(File(rootProject.rootDir, "github.properties")))
 }
 
 android {
@@ -92,7 +100,7 @@ afterEvaluate {
                     credentials {
                         /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
                         username = ProjectSetting.GITHUB_KEY_ID
-                        password = ProjectSetting.GITHUB_KEY_TOKEN
+                        password = (githubProperties["gpr.key"] ?: System.getenv("GPR_API_KEY")).toString()
                     }
                 }
             }
