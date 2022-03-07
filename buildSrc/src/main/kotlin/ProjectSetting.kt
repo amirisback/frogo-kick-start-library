@@ -15,6 +15,7 @@ object ProjectSetting {
 
     // Project Name
     const val NAME_APP = "Frogo Kick Start Library"
+    const val REPOSITORY_NAME = "frogo-kick-start-library"
 
     const val APP_DOMAIN = "com"
     const val APP_PLAY_CONSOLE = "frogobox"
@@ -39,6 +40,9 @@ object ProjectSetting {
     const val PROJECT_TARGET_SDK = PROJECT_COMPILE_SDK
 
     // ---------------------------------------------------------------------------------------------
+
+    const val GITHUB_KEY_ID = "50381689"
+    const val GITHUB_KEY_TOKEN = "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"
 
     const val BASE_PACAKGE_NAME = "$APP_DOMAIN.$APP_PLAY_CONSOLE"
 

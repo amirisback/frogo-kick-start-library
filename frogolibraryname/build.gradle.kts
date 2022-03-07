@@ -80,6 +80,23 @@ afterEvaluate {
                 version = ProjectSetting.PROJECT_VERSION_NAME
 
             }
+
+            repositories {
+                maven {
+                    name = "GitHubPackages"
+                    /** Configure path of your package repository on Github
+                     *  Replace GITHUB_USERID with your/organisation Github userID and REPOSITORY with the repository name on GitHub
+                     */
+                    url = uri("https://maven.pkg.github.com/${ProjectSetting.GITHUB_KEY_ID}/${ProjectSetting.REPOSITORY_NAME}")
+
+                    credentials {
+                        /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
+                        username = ProjectSetting.GITHUB_KEY_ID
+                        password = ProjectSetting.GITHUB_KEY_TOKEN
+                    }
+                }
+            }
+
         }
     }
 }
