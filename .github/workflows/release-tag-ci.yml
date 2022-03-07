@@ -26,5 +26,5 @@ jobs:
           prerelease: false
           tag_name: ${{ github.ref }}
           release_name: Release v${{ github.ref }}
-          discussionCategory : Announcements
+          discussionCategory : "Announcements"
           body_path: "README.md"
