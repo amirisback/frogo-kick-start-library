@@ -1,6 +1,7 @@
 name: Android CI
 
 on:
+  # workflow_dispatch - for clicking
   # Triggers the workflow on push or pull request events but only for default and protected branches
   push:
     branches: [ master ]
@@ -52,8 +53,3 @@ jobs:
         with:
           name: App bundle(s) and APK(s) generated
           path: app/build/outputs/
-
-      # Publish to GitHub Package
-      # Noted check you package tab
-      - name: Publish To GitHub Package
-        run: ./gradlew publish
