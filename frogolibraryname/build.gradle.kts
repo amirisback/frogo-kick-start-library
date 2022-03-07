@@ -99,7 +99,7 @@ afterEvaluate {
 
                     credentials {
                         /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
-                        username = ProjectSetting.GITHUB_KEY_ID
+                        username = (githubProperties["gpr.usr"] ?: System.getenv("GPR_USER_ID")).toString() // ProjectSetting.GITHUB_KEY_ID
                         password = (githubProperties["gpr.key"] ?: System.getenv("GPR_API_KEY")).toString()
                     }
                 }

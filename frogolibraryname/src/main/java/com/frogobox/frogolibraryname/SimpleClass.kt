@@ -14,5 +14,8 @@ package com.frogobox.frogolibraryname
  *
  */
 
-class SimpleClass {
+object SimpleClass {
+
+    val TAG = SimpleClass::class.java.simpleName
+
 }
