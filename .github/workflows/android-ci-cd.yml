@@ -55,4 +55,4 @@ jobs:
           path: app/build/outputs/
 
       - name: Publish To Github Package
-        run: ./gradlew publish --release
+        run: ./gradlew publish
