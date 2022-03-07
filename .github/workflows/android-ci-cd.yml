@@ -57,6 +57,3 @@ jobs:
       # Noted check you package tab
       - name: Publish To GitHub Package
         run: ./gradlew publish
-        env:
-          GPR_USER_ID: ${{ secrets.GPR_USER_ID }}
-          GPR_API_KEY: ${{ secrets.GPR_API_KEY }}
