@@ -20,10 +20,10 @@ object ProjectSetting {
     const val APP_PLAY_CONSOLE = "frogobox"
     const val APP_NAME = "kickstartlibrary"
 
-    const val LIBRARY_NAME_SDK = "sdk"
+    const val LIBRARY_NAME_SDK = "frogolibraryname"
     const val LIBRARY_NAME_CORE_SDK = "coresdk"
 
-    const val MODULE_NAME_SDK = "frogosdk"
+    const val MODULE_NAME_SDK = "frogolibraryname"
     const val MODULE_NAME_CORE_SDK = "frogocoresdk"
 
     // ---------------------------------------------------------------------------------------------
