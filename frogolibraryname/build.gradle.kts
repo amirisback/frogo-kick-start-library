@@ -9,10 +9,6 @@ plugins {
     `maven-publish`
 }
 
-val githubProperties = Properties().apply {
-    load(FileInputStream(File(rootProject.rootDir, "github.properties")))
-}
-
 android {
 
     compileSdk = ProjectSetting.PROJECT_COMPILE_SDK
@@ -99,8 +95,8 @@ afterEvaluate {
 
                     credentials {
                         /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
-                        username = System.getenv("GPR_USER_ID") ?: ProjectSetting.GITHUB_KEY_ID // ProjectSetting.GITHUB_KEY_ID
-                        password = System.getenv("GPR_API_KEY") ?: githubProperties["gpr.key"].toString()
+                        username = ProjectSetting.GITHUB_KEY_ID // ProjectSetting.GITHUB_KEY_ID
+                        password = "ghp_${ProjectSetting.GITHUB_KEY_TOKEN}"
                     }
                 }
             }

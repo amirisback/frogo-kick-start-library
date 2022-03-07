@@ -42,6 +42,7 @@ object ProjectSetting {
     // ---------------------------------------------------------------------------------------------
 
     const val GITHUB_KEY_ID = "50381689"
+    const val GITHUB_KEY_TOKEN = "lQzaNA82waI4cmHm7ks5d8VrqZl8pD1F0yIe"
 
     const val BASE_PACAKGE_NAME = "$APP_DOMAIN.$APP_PLAY_CONSOLE"
 

@@ -31,9 +31,6 @@ jobs:
       # Run Build Project
       - name: Build project
         run: ./gradlew build
-        env:
-          GPR_USER_ID: ${{ secrets.GPR_USER_ID }}
-          GPR_API_KEY: ${{ secrets.GPR_API_KEY }}
 
       # Create APK Debug
       - name: Build apk debug project (APK)
