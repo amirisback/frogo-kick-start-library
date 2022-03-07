@@ -1,6 +1,8 @@
 ![](https://raw.githubusercontent.com/frogobox/.github/main/docs/image/banner-frogo-kick-start-library.png?raw=true)
 
-## frogo-kick-start-library
+## About This Project
+[![Android CI](https://github.com/frogobox/frogo-kick-start-library/actions/workflows/android-ci.yml/badge.svg?style=flat-square)](https://github.com/frogobox/frogo-kick-start-library/actions/workflows/android-ci.yml)
+
 - Template Frogo for creating library
 - Using GitHub Action For CI / CD
 - Privacy Policy [Click Here](https://github.com/frogobox/frogo-kick-start-library/blob/master/PRIVACY-POLICY.md)
