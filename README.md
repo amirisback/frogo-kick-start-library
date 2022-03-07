@@ -2,8 +2,6 @@
 
 ## About This Project
 [![Android CI](https://github.com/frogobox/frogo-kick-start-library/actions/workflows/android-ci.yml/badge.svg)](https://github.com/frogobox/frogo-kick-start-library/actions/workflows/android-ci.yml)
-[![GitHub Release CI](https://github.com/frogobox/frogo-kick-start-library/actions/workflows/release-tag-ci.yml/badge.svg)](https://github.com/frogobox/frogo-kick-start-library/actions/workflows/release-tag-ci.yml)
-
 - Template Frogo for creating library
 - Using GitHub Action For CI / CD
 - Privacy Policy [Click Here](https://github.com/frogobox/frogo-kick-start-library/blob/master/PRIVACY-POLICY.md)
