@@ -21,11 +21,11 @@ object ProjectSetting {
     const val APP_PLAY_CONSOLE = "frogobox"
     const val APP_NAME = "kickstartlibrary"
 
-    const val LIBRARY_NAME_SDK = "frogolibraryname"
-    const val LIBRARY_NAME_CORE_SDK = "coresdk"
+    const val LIBRARY_NAME_SDK = "libraryname"
+    const val LIBRARY_NAME_CORE_SDK = "corelibraryname"
 
     const val MODULE_NAME_SDK = "frogolibraryname"
-    const val MODULE_NAME_CORE_SDK = "frogocoresdk"
+    const val MODULE_NAME_CORE_SDK = "frogocorelibraryname"
 
     // ---------------------------------------------------------------------------------------------
 
@@ -40,9 +40,6 @@ object ProjectSetting {
     const val PROJECT_TARGET_SDK = PROJECT_COMPILE_SDK
 
     // ---------------------------------------------------------------------------------------------
-
-    const val GITHUB_KEY_ID = "50381689"
-    const val GITHUB_KEY_TOKEN = "lQzaNA82waI4cmHm7ks5d8VrqZl8pD1F0yIe"
 
     const val BASE_PACAKGE_NAME = "$APP_DOMAIN.$APP_PLAY_CONSOLE"
 

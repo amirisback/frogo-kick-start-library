@@ -1,4 +1,4 @@
-package com.frogobox.frogolibraryname
+package com.frogobox.libraryname
 
 
 /*
