@@ -7,6 +7,7 @@ plugins {
 android {
 
     compileSdk = ProjectSetting.PROJECT_COMPILE_SDK
+    namespace = ProjectSetting.PROJECT_APP_NAME_SPACE
 
     defaultConfig {
         applicationId = ProjectSetting.PROJECT_APP_ID
@@ -27,12 +28,11 @@ android {
         setProperty("archivesBaseName", "${ProjectSetting.NAME_APK}(${versionName})")
 
         // Declaration apps name debug mode
-        val debugAttribute = "Development"
-        val nameAppDebug = "${ProjectSetting.NAME_APP} $debugAttribute"
+
         resourceConfigurations += setOf("en", "id")
 
         // Inject app name for debug
-        resValue("string", "app_name", nameAppDebug)
+        resValue("string", "app_name", ProjectSetting.NAME_APP_DEBUG)
 
     }
 
@@ -61,7 +61,7 @@ android {
             signingConfig = signingConfigs.getByName("release")
 
             // Inject app name for release
-            resValue("string", "app_name", ProjectSetting.APP_NAME)
+            resValue("string", "app_name", ProjectSetting.NAME_APP)
 
         }
     }
@@ -85,8 +85,7 @@ android {
 
 dependencies {
 
-    implementation(project(":frogolibraryname"))
-
+    implementation(project(DependencyGradle.INTERNAL_LIB))
     implementation(Androidx.appCompat)
     implementation(Androidx.constraintLayout)
     implementation(Androidx.Core.ktx)

@@ -1,7 +1,7 @@
-package com.frogobox.libraryname
+package com.frogobox.frogolib
 
 
-/*
+/**
  * Created by faisalamir on 04/03/22
  * FrogoKickStartLibrary
  * -----------------------------------------

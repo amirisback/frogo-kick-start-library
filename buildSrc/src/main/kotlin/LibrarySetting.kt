@@ -1,8 +1,8 @@
-import org.gradle.kotlin.dsl.project
+import ProjectSetting.BASE_PACAKGE_NAME
 
 /**
  * Created by faisalamir on 19/09/21
- * FrogoRecyclerView
+ *
  * -----------------------------------------
  * Name     : Muhammad Faisal Amir
  * E-mail   : faisalamircs@gmail.com
@@ -13,9 +13,9 @@ import org.gradle.kotlin.dsl.project
  *
  */
 
-object DependencyGradle {
+object LibrarySetting {
 
-    const val KOTLIN_VERSION = Version.JetBrains.kotlin
-    const val INTERNAL_LIB = ":frogolib"
+    const val FROGO_LIB = "frogolib"
+    const val FROGO_LIB_ID = "$BASE_PACAKGE_NAME.$FROGO_LIB"
 
 }

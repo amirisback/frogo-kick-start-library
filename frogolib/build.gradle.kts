@@ -8,6 +8,7 @@ plugins {
 android {
 
     compileSdk = ProjectSetting.PROJECT_COMPILE_SDK
+    namespace = LibrarySetting.FROGO_LIB_ID
 
     defaultConfig {
         minSdk = ProjectSetting.PROJECT_MIN_SDK
@@ -66,13 +67,13 @@ afterEvaluate {
                 // NOTE : Delete this line code if you publish Native Java / Kotlin Library
                 from(components["release"])
 
-                // Library Package Name (Example : "com.frogobox.androidfirstlib")
-                // NOTE : Different GroupId For Each Library / Module, So That Each Library Is Not Overwritten
-                groupId = ProjectSetting.PROJECT_LIB_ID_SDK
-
                 // Library Name / Module Name (Example : "androidfirstlib")
                 // NOTE : Different ArtifactId For Each Library / Module, So That Each Library Is Not Overwritten
-                artifactId = ProjectSetting.MODULE_NAME_SDK
+                artifactId = LibrarySetting.FROGO_LIB
+
+                // Library Package Name (Example : "com.frogobox.androidfirstlib")
+                // NOTE : Different GroupId For Each Library / Module, So That Each Library Is Not Overwritten
+                groupId = LibrarySetting.FROGO_LIB_ID
 
                 // Version Library Name (Example : "1.0.0")
                 version = ProjectSetting.PROJECT_VERSION_NAME
