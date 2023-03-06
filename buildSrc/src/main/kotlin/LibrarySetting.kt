@@ -16,6 +16,6 @@ import ProjectSetting.BASE_PACAKGE_NAME
 object LibrarySetting {
 
     const val FROGO_LIB = "frogolib"
-    const val FROGO_LIB_ID = "$BASE_PACAKGE_NAME.$FROGO_LIB"
+    const val FROGO_LIB_ID = "$BASE_PACAKGE_NAME"
 
 }

@@ -60,6 +60,17 @@ afterEvaluate {
     publishing {
         publications {
 
+            repositories {
+                maven {
+                    name = "KickStartLibrary"
+                    url = uri("https://maven.pkg.github.com/frogobox/kick-start-library")
+                    credentials {
+                        username = project.findProperty("gpr.user") as String? ?: ""
+                        password = project.findProperty("gpr.key") as String? ?: ""
+                    }
+                }
+            }
+
             // Creates a Maven publication called "release".
             register("release", MavenPublication::class) {
 
