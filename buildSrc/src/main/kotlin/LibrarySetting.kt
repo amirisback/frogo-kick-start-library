@@ -18,7 +18,7 @@ object LibrarySetting {
     const val GITHUB_ACCOUNT = "frogobox"
     const val GITHUB_REPOSITORY = "kick-start-library"
 
-    const val ARTIFACT_ID = "frogolib"
+    const val ARTIFACT_ID = GITHUB_REPOSITORY
     const val GROUP_ID = "com.github.$GITHUB_ACCOUNT"
 
     const val NAME_SPACE = "$BASE_PACAKGE_NAME.$ARTIFACT_ID"
