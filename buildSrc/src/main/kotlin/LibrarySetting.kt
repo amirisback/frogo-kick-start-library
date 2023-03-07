@@ -18,10 +18,12 @@ object LibrarySetting {
     const val GITHUB_ACCOUNT = "frogobox"
     const val GITHUB_REPOSITORY = "kick-start-library"
 
+    const val LIB_NAME = "frogolib"
+
     const val ARTIFACT_ID = GITHUB_REPOSITORY
     const val GROUP_ID = "com.github.$GITHUB_ACCOUNT"
 
-    const val NAME_SPACE = "$BASE_PACAKGE_NAME.$ARTIFACT_ID"
+    const val NAME_SPACE = "$BASE_PACAKGE_NAME.$LIB_NAME"
 
     const val MAVEN_URI = "https://maven.pkg.github.com/$GITHUB_ACCOUNT/$GITHUB_REPOSITORY"
 
