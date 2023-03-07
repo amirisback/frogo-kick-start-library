@@ -15,7 +15,14 @@ import ProjectSetting.BASE_PACAKGE_NAME
 
 object LibrarySetting {
 
-    const val FROGO_LIB = "frogolib"
-    const val FROGO_LIB_ID = "$BASE_PACAKGE_NAME"
+    const val GITHUB_ACCOUNT = "frogobox"
+    const val GITHUB_REPOSITORY = "kick-start-library"
+
+    const val ARTIFACT_ID = "frogolib"
+    const val GROUP_ID = "com.github.$GITHUB_ACCOUNT"
+
+    const val NAME_SPACE = "$BASE_PACAKGE_NAME.$ARTIFACT_ID"
+
+    const val MAVEN_URI = "https://maven.pkg.github.com/$GITHUB_ACCOUNT/$GITHUB_REPOSITORY"
 
 }
